@@ -1,10 +1,19 @@
+
+
 var etsyItems = etsyData.results
 console.log (etsyItems);
 
+// var imageSizing =etsyItems.filter(function(getImages){
+//   return (getImages.Images[0].url_);
+// });
+//
+// console.log(imageSizing)
 
 
 
-///////====this gets us the names of the items =======
+
+
+//======this gets us the names of the items =======
 // var names = []
 //   for (var i=0; i< etsyItems.length; i++) {
 //     names.push(etsyItems[i].title)
@@ -12,7 +21,7 @@ console.log (etsyItems);
 //
 //   console.log(names)
 
-// // function saxophones etsyItems.map(saxItems) {
+// function saxophones etsyItems.map(saxItems) {
 // var saxophones = etsyItems.map(function(etsyItems) {
 //     var title = etsyItems.title;
 //     var image = etsyItems.Images.url_75x75;
@@ -22,15 +31,45 @@ console.log (etsyItems);
 //     var url = etsyItems.url;
 //
 //
-//         return title + " costs " + price
+//         return title + " cost\n " + price
 // });
 //
 //   console.log(saxophones)
 //
 //   var imagebox = document.getElementById("container");
-//   imagebox.innerHTML = "Hello" + saxophones;
+//   imagebox.innerHTML = "Hello\n" + saxophones;
+var gameOT = etsyItems.map(function(etsyItems) {
+    var title = etsyItems.title;
+    var image = etsyItems.Images[0].url_170x135;
+    var shopName = etsyItems.Shop.shop_name;
+    var shopUrl = etsyItems.Shop.url;
+    var price = etsyItems.price;
+    var url = etsyItems.url;
+
+        return `
+          <div class ="gridSquares">
+              <div class="iSquare">
+                <a href="${url}">
+                  <img src="${image}"alt="${title}/>
+                  <div class="itemDescript">
+                      <div class="imageTitle">${title}></div>
+                      <div class="itemPrice"><span>$</span>${price}</div>
+                      <div class="shopName">${shopName}</div>
+
+                  </div>
+               </a>
+              </div>
+          </div>
+          `;
+  });
+
+var grid = $(".grid");
+
+grid.append(gameOT);
+  // console.log(gameOT)
 
 
-  var saxophones = etsyItems.map(function(etsyItems) => etsyItems.title)
 
-    console.log(saxophones)
+  //
+  // var imagebox = document.getElementById("container");
+  // imagebox.innerHTML = "Hello\n" + gameOT;

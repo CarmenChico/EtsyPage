@@ -1,8 +1,120 @@
+@mixin isquare-box ($size) {
+    width: $size;
+    height: $size;
+    float:left;
+}
+
+// @mixin isquare-image () {
+//   min-height:20%;
+//   min-width:20%;
+//   max-height:185px;
+//   max-width:233px;
+// }
+
+
+
 * {
   margin: 0;
-}
+  text-decoration: none;
+  }
 
 body {
   height:100%;
   width:100%;
 }
+
+.page {
+
+}
+
+ul {
+  list-style: none;
+  padding:12px;
+}
+
+
+    .nav {
+      display:block;
+      max-height: 80px;
+      min-height:60px;
+      // background-color: lightgrey;
+      border: 1px solid red;
+    }
+
+    .subnav {
+      max-height:43px;
+      min-height:20px;
+      background-color: yellow;
+      position:relative;
+      display:inline-block;
+    }
+
+    .container {
+      background-color:#f5f5f1;
+      padding: 30px;
+    }
+
+        .showResultsFor {
+          float:left;
+        }
+            .allCat {
+              border: 1px solid brown;
+              background-color: white;
+            }
+              // Grid Area
+              .grid {
+                overflow: auto;
+                padding-left:10px;
+              }
+                .iSquare {
+                  padding: 10px;
+                  @include isquare-box(250px)
+
+                }
+
+
+
+                  //makes the linked fonts black
+                  a {
+                    color:black;
+                    width: 100%;
+                  }
+
+                    .img {
+                      // min-height:20%;
+                      // min-width:20%;
+                      // max-height:185px;
+                      // max-width:233px;
+                      border:0;
+                    }
+
+                    .itemDescript {
+                      background-color: white;
+                      height: 32px;
+
+                    }
+                              .imageTitle {
+                                font-size: 10px;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                }
+                                .itemPrice {
+                                  color: #78c042;
+                                  font-size: 12px;
+                                  font-weight: 400;
+                                  float:right;
+                                  padding-left: 4px;
+
+                                }
+                              .shopName {
+                                font-size:10px;
+                                color: grey;
+                                padding-left:0px;
+                                display:inline;
+                                position: relative;
+                              }
+
+
+    footer {
+      background-color: black;
+    }
