@@ -6,6 +6,10 @@ body {
   height: 100%;
   width: 100%; }
 
+a {
+  text-decoration: none;
+  color: #0192B5; }
+
 ul {
   list-style: none;
   padding: 12px; }
@@ -22,6 +26,9 @@ ul {
   background-color: yellow;
   position: relative;
   display: inline-block; }
+
+.menu-list a {
+  color: grey; }
 
 .container {
   background-color: #f5f5f1;
@@ -44,7 +51,7 @@ ul {
   height: 250px;
   float: left; }
 
-a {
+.image-text-title {
   color: black;
   width: 100%; }
 
@@ -75,4 +82,8 @@ a {
   position: relative; }
 
 footer {
-  background-color: black; }
+  background-color: #135021;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 6; }
