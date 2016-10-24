@@ -1,4 +1,4 @@
-@mixin isquare-box ($size) {
+@mixin iSquare-box ($size) {
     width: $size;
     height: $size;
     float:left;
@@ -25,6 +25,7 @@ body {
 a {
   text-decoration: none;
   color: #0192B5;
+
 }
 .page {
 
@@ -34,7 +35,9 @@ ul {
   list-style: none;
   padding:12px;
 }
-
+li {
+  padding-left:7px;
+}
 
     .nav {
       display:block;
@@ -64,43 +67,53 @@ ul {
           float:left;
         }
             .allCat {
-              border: 1px solid brown;
+              border: 1px solid lightgrey;
               background-color: white;
+            }
+
+            .categ-colum a {
+              padding-left:1px;
             }
               // Grid Area
               .grid {
                 overflow: auto;
-                padding-left:10px;
+                margin-left:18px;
               }
                 .iSquare {
-                  padding: 10px;
-                  @include isquare-box(250px)
-
+                  margin-left: 20px;
+                  margin-bottom: 20px;
+                  @include iSquare-box(250px);
+                  border: 1px solid #e6e6e6;
+                  text-overflow: ellipsis;
+                  background-color: white;
                 }
-
-
-
-                  //makes the linked fonts black
-                  .image-text-title {
+                  .squareUrl {
                     color:black;
-                    width: 100%;
+                    // @include iSquare-box(250px:)
+                    // display: inline-block;
+                //     position: relative;
+                    // width: 100%;
                   }
 
-                    .img {
+                    img {
                       // min-height:20%;
                       // min-width:20%;
                       // max-height:185px;
                       // max-width:233px;
+                      height:auto;
+                      width:250px;
                       border:0;
                     }
 
-                    .itemDescript {
-                      background-color: white;
-                      height: 32px;
+                    .itemDescriptBox {
+                      line-height: 10px;
+                      height: 35px;
+                      border: 1px solid lightgrey;
 
                     }
                               .imageTitle {
                                 font-size: 10px;
+                                overflow: hidden;
                                 text-overflow: ellipsis;
                                 white-space: nowrap;
                                 }
