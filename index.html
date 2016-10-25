@@ -4,7 +4,9 @@
     <title>Etsy Search Page</title>
     <link href="CSS/normalize.css" rel="stylesheet"/>
     <link href="CSS/style.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="http://pasteup.guim.co.uk/0.0.5/css/fonts.pasteup.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+
 
   </head>
   <body>
@@ -14,22 +16,13 @@
               <div class="EtsyLogo">Etsy</div>
               <div class="searchBar">
                 <input id="searchBar" type="text" placeholder"Game of Throne" name="Search">
+                <button id="searchButton" type="button" name="Search">Search</button>
               </div>
-              <div class="searchButton">
-                <button id="search" type="button" name="Search">Search</button>
-
-              </div>
-              <ul class=:"navrigthItems">
-                <div class="cart">
-                  <img id="cartImage" src="Image/cart.png">
-                  Cart
-                </div>
+              <ul class="navRightItems">
+                <div class="cart">Cart<img id="cartImage" src="Image/cart.png"></div>
                 <button id="signIn" type="button" name="SignIn">Sign in</button>
                 <li class="rightNavItems"><a href="#">Register</a></li>
                 <li class="rightNavItems"><a href="#">Sell on Etsy</a></li>
-
-
-
               </ul>
             </nav>
             <div class="subnav">
@@ -49,7 +42,7 @@
                     <h1 class="showResultsHeader">Show results for:</h1>
                     <div class="allCat">
                       <ul>
-                        <div class="categ-column-head">All categories</div>
+                        <h3 class="categ-column-head">All categories</h3>
                         <li class="categ-column"><a href="#">Home & Living</a></li>
                         <li class="categ-column"><a href="#">Art & Collectibles</a></li>
                         <li class="categ-column"><a href="#">Weapons</a></li>
@@ -77,14 +70,16 @@
                   </div>
 
                   <div class="otherPages">
-                    <button id="left" type="button" name="button"><</button>
-                    <button id="currentPage" type="button" name="button">1</button>
-                    <button class="nextPage" type="button" name="button">2</button>
-                    <button class="nextPage" type="button" name="button">3</button>
-                    <button class="nextPage" type="button" name="button">4</button>
-                    <button class="nextPage" type="button" name="button">...</button>
-                    <button class="nextPage" type="button" name="button">8</button>
-                    <button class="nextPage" type="button" name="button">></button>
+                    <div class="next-page-wrapper">
+                      <button id="left" type="button" name="button"><</button>
+                      <button id="currentPage" type="button" name="button">1</button>
+                      <button class="nextPage" type="button" name="button">2</button>
+                      <button class="nextPage" type="button" name="button">3</button>
+                      <button class="nextPage" type="button" name="button">4</button>
+                      <button class="nextPage" type="button" name="button">...</button>
+                      <button class="nextPage" type="button" name="button">8</button>
+                      <button class="nextPage" type="button" name="button">></button>
+                    </div>
                   </div>
             </div>
             <footer>
