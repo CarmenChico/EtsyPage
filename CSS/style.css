@@ -1,7 +1,6 @@
 * {
-  margin: 0;
-  text-decoration: none;
-  font-family: "Graphik Web","Arial","Helvetica",sans-serif; }
+  box-sizing: border-box;
+  text-decoration: none; }
 
 body {
   height: 100%;
@@ -14,6 +13,7 @@ a {
 .EtsyLogo {
   color: #f45800;
   font-size: 30px;
+  font-family: 'Playfair Display', serif;
   float: left;
   width: 75px;
   margin-left: 10px; }
@@ -30,6 +30,7 @@ li {
   padding-left: 7px; }
 
 .nav {
+  width: auto;
   display: block;
   max-height: 80px;
   min-height: 60px;
@@ -43,16 +44,16 @@ li {
   float: left; }
 
 .navrightItems {
-  float: left; }
+  float: right; }
 
 .rightNavItems {
-  float: left; }
+  float: right; }
 
 #signIn {
-  float: left; }
+  float: right; }
 
 .cart {
-  float: left; }
+  float: right; }
 
 .subnav {
   max-height: 43px;
