@@ -4,6 +4,20 @@
     float:left;
 }
 
+@mixin imageIcon ($size) {
+    width:$size;
+    height: $size;
+
+}
+
+@mixin pageBox ($size) {
+    width:$size;
+    height:$size;
+    border: 1px solid grey;
+    background-color: white;
+    font-size: 8px;
+}
+
 // @mixin isquare-image () {
 //   min-height:20%;
 //   min-width:20%;
@@ -31,6 +45,17 @@ a {
 .page {
 
 }
+.EtsyLogo {
+  color:#f45800;
+  font-size:30px;
+  float:left;
+  width:75px;
+  margin-left: 10px;
+}
+
+#cartImage {
+    @include imageIcon (40px);
+}
 
 ul {
   list-style: none;
@@ -46,22 +71,56 @@ li {
       min-height:60px;
       // background-color: lightgrey;
       border: 1px solid red;
+      position: relative;
     }
+      .searchBar {
+        float: left;
+      }
 
+      #search {
+        float: left;
+      }
+
+      .navrightItems {
+        float: left;
+      }
+        .rightNavItems {
+          float: left;
+        }
+          #signIn {
+            float:left;
+          }
+            .cart {
+              float:left;
+            }
     .subnav {
       max-height:43px;
       min-height:20px;
       background-color: yellow;
       position:relative;
-      display: block;
+      // display: block;
+      padding-left: 18px;
+      padding-right: 18px;
 
     }
       .snav-menu-bar {
         display: block;
+        padding-top: 2px;
+        margin-left: -3px;
+
       }
+        li.menu-list {
+          display: inline-block;
+          float:left;
+          margin-right:12px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
 
 .menu-list a{
     color:grey;
+    padding:3px;
 }
 
     .container {
@@ -75,6 +134,9 @@ li {
           padding-right:10px;
 
         }
+          h1 {
+            font-size: 12px;
+          }
             .allCat {
               border: 1px solid lightgrey;
               background-color: white;
@@ -143,6 +205,27 @@ li {
                                 position: relative;
                               }
 
+
+.otherpages {
+  float:left;
+  margin:0px;
+  padding:0px
+
+}
+  .left {
+    color:grey;
+    @include pageBox(4px);
+  }
+  .currentPage {
+    color:black;
+    @include pageBox(4px);
+
+  }
+  .nextPage {
+    color:black;
+    @include pageBox(4px);
+
+  }
 
     footer {
       background-color: #135021;

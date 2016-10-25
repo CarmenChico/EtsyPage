@@ -7,10 +7,24 @@
   </head>
   <body>
       <div class="page">
-
-
             <nav class="nav">
+              <div class="EtsyLogo">Etsy</div>
+              <div class="searchBar">
+                <input id="searchBar" type="text" placeholder"Game of Throne" name="Search">
+              </div>
+              <div class="searchButton">
+                <button id="search" type="button" name="Search">Search</button>
 
+              </div>
+              <ul class=:"navrigthItems">
+                <li class="rightNavItems"><a href="#">Sell on Etsy</a></li>
+                <li class="rightNavItems"><a href="#">Register</a></li>
+                <button id="signIn" type="button" name="SignIn">Sign in</button>
+                <div class="cart">
+                  <img id="cartImage" src="Image/cart.png">
+                  Cart
+                </div>
+              </ul>
             </nav>
             <div class="subnav">
               <ul class="snav-menu-bar">
@@ -24,9 +38,9 @@
                 <li class="menu-list"><a href="#">Vintage</a></li>
               </ul>
             </div>
-
             <div class="container">
                   <div class="showResultsFor">
+                    <h1 class="showResultsHeader">Show results for:</h1>
                     <div class="allCat">
                       <ul>
                         <div class="categ-column-head">All categories</div>
@@ -48,17 +62,30 @@
 
                   </div>
 
+
+
+                  <div class="SearchedResultsGrid">
+                    <h2 class="allCategories"><a href="#">All categories</a></h2>
+
                   <div class="grid"> </div>
-
+                  <div class="otherPages">
+                    <button class="left" type="button" name="button"><</button>
+                    <button class="currentPage" type="button" name="button">1</button>
+                    <button class="nextPage" type="button" name="button">2</button>
+                    <button class="nextPage" type="button" name="button">3</button>
+                    <button class="nextPage" type="button" name="button">4</button>
+                    <button class="nextPage" type="button" name="button">...</button>
+                    <button class="nextPage" type="button" name="button">8</button>
+                    <button class="nextPage" type="button" name="button">Last</button>
+                  </div>
+                </div>
             </div>
-
-
             <footer>
               <span>Brought to you by Carmen Chico !!!</span>
-             </footer>
+             </footer>  
+        <script src="JS/jQuery.js"></script>
+        <script src="JS/data.js"></script>
+        <script src="JS/main.js"></script>
       </div>
-      <script src="JS/jQuery.js"></script>
-      <script src="JS/data.js"></script>
-      <script src="JS/main.js"></script>
   </body>
 </html>
