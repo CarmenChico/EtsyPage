@@ -19,8 +19,8 @@ a {
   margin-left: 10px; }
 
 #cartImage {
-  width: 40px;
-  height: 40px; }
+  width: 20px;
+  height: 20px; }
 
 ul {
   list-style: none;
@@ -146,34 +146,35 @@ img {
   display: inline;
   position: relative; }
 
-.otherpages {
-  float: left;
-  margin: 0px;
-  padding: 0px; }
-
-.left {
+#left {
   color: grey;
-  width: 4px;
-  height: 4px;
+  width: 22px;
+  height: 22px;
   border: 1px solid grey;
-  background-color: white;
-  font-size: 8px; }
+  font-size: 13px;
+  float: left;
+  font-weight: bold;
+  color: black; }
 
-.currentPage {
-  color: black;
-  width: 4px;
-  height: 4px;
+#currentPage {
+  background-color: #f5f5f1;
+  width: 22px;
+  height: 22px;
   border: 1px solid grey;
-  background-color: white;
-  font-size: 8px; }
+  font-size: 13px;
+  float: left;
+  font-weight: bold;
+  color: black; }
 
 .nextPage {
   color: black;
-  width: 4px;
-  height: 4px;
+  width: 22px;
+  height: 22px;
   border: 1px solid grey;
-  background-color: white;
-  font-size: 8px; }
+  font-size: 13px;
+  float: left;
+  font-weight: bold;
+  color: black; }
 
 footer {
   background-color: #135021;
