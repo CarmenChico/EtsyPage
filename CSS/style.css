@@ -81,7 +81,6 @@ li {
 
 .cart {
   float: right;
-  vertical-align: sub;
   font-size: 11px;
   text-align: right;
   border-left: 1px solid lightgrey;
@@ -90,8 +89,7 @@ li {
 
 #cartImage {
   width: 20px;
-  height: 20px;
-  border-style: none; }
+  height: 20px; }
 
 .subnav {
   width: auto;
@@ -171,9 +169,6 @@ h3 {
 .squareUrl {
   color: black; }
 
-.tile {
-  position: relative; }
-
 img.tiles {
   height: auto;
   width: 100%;
@@ -193,7 +188,8 @@ img.tiles {
   border: .5px solid lightgrey;
   height: 25px;
   width: 26px;
-  padding: 3px; }
+  padding: 3px;
+  position: absolute; }
 
 img.icon {
   height: 16px;

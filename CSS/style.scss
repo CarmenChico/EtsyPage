@@ -128,7 +128,7 @@ li {
 
             .cart {
               float: right;
-              vertical-align:sub;
+              // vertical-align:sub;
               font-size: 11px;
               text-align: right;
               border-left:1px solid lightgrey;
@@ -138,7 +138,7 @@ li {
             }
               #cartImage {
                   @include imageIcon (20px);
-                  border-style: none;
+
                   // padding-left:8px
                 }
     .subnav {
@@ -231,7 +231,7 @@ li {
                   }
 
                   .tile {
-                    position: relative;
+                    // position: relative;
                   }
                     img.tiles {
                       height:auto;
@@ -258,6 +258,7 @@ li {
                             height:25px;
                             width:26px;
                             padding:3px;
+                            position: absolute;
                           }
                           img.icon {
                             height: 16px;
