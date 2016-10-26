@@ -4,12 +4,11 @@
 
 body {
   height: 100%;
-  width: 100%;
-  font-family: 'Libre Franklin', sans-serif; }
+  width: 100%; }
 
 a {
   text-decoration: none;
-  color: #0192B5; }
+  color: #11bae2; }
 
 .EtsyLogo {
   color: #f45800;
@@ -19,10 +18,6 @@ a {
   line-height: 50px;
   width: 75px;
   margin-top: 5px; }
-
-#cartImage {
-  width: 20px;
-  height: 20px; }
 
 ul {
   list-style: none;
@@ -42,37 +37,61 @@ li {
 
 .searchBar {
   float: left;
-  margin-top: 14px; }
+  margin-left: 5px;
+  margin-top: 14px;
+  border: 1px solid lightgrey; }
 
 #searchBar {
-  background-color: #FBFBFA; }
+  background-color: #FBFBFA;
+  width: 300px;
+  font-size: 13px;
+  font-weight: 900;
+  color: black;
+  border: none;
+  padding-left: 7px; }
 
 #searchButton {
   margin-left: -3px;
-  background-color: #0192B5;
-  color: white; }
+  background-color: #11bae2;
+  color: white;
+  border: none; }
 
 .navRightItems {
+  display: inline-block;
   float: right;
-  font-weight: bold;
-  font-size: 12px;
-  margin-right: 20px;
-  margin: 0; }
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0; }
 
 .rightNavItems {
   float: right;
+  display: block;
   padding: 8px; }
 
 #signIn {
   float: right;
-  border-radius: 3px;
+  border-radius: 4px;
   background-color: white;
-  border: 1px solid #0192B5;
-  color: #0192B5; }
+  border: 1px solid #11bae2;
+  color: #11bae2;
+  padding: 7px; }
 
 .cart {
   float: right;
-  font-size: 10px; }
+  vertical-align: sub;
+  font-size: 11px;
+  text-align: right;
+  border-left: 1px solid lightgrey;
+  margin-left: 8px;
+  padding-left: 8px; }
+
+#cartImage {
+  width: 20px;
+  height: 20px;
+  border-style: none; }
 
 .subnav {
   width: auto;
@@ -95,7 +114,9 @@ li {
 li.menu-list {
   display: inline-block;
   margin-right: 12px;
-  padding-left: 3px; }
+  padding-left: 3px;
+  word-spacing: 1px;
+  letter-spacing: 0.5px; }
 
 .menu-list a {
   color: grey;
@@ -109,11 +130,12 @@ li.menu-list {
 .showResultsFor {
   float: left;
   padding-left: 30px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  width: 250px; }
 
 h1 {
   font-size: 13px;
-  font-weight: 400; }
+  font-weight: 500; }
 
 .allCat {
   border: 1px solid lightgrey;
@@ -143,15 +165,25 @@ h3 {
   float: left;
   border: 1px solid #e6e6e6;
   text-overflow: ellipsis;
-  background-color: white; }
+  background-color: white;
+  border-radius: 4px; }
 
 .squareUrl {
   color: black; }
 
 img {
   height: auto;
-  width: 250px;
-  border: 0; }
+  width: 100%;
+  border: 0;
+  display: block;
+  border-radius: 4px; }
+
+.icons {
+  float: right;
+  border-radius: 4px; }
+
+#hoverIcons {
+  height: auto; }
 
 .itemDescriptBox {
   line-height: 18px;
@@ -163,7 +195,7 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  line-height: 18px; }
+  line-height: 15px; }
 
 .itemPrice {
   color: #78c042;
@@ -181,37 +213,82 @@ img {
   position: relative;
   line-height: 16px; }
 
-h2 {
+.allCategories {
   padding: 0px;
   margin: 8px;
   font-size: 13px; }
 
-#left {
-  color: grey;
-  width: 22px;
-  height: 22px;
-  border: 1px solid grey;
-  font-size: 13px;
-  float: left;
-  font-weight: bold;
-  color: black; }
+span1 {
+  font-weight: bold; }
 
-#currentPage {
-  background-color: #f5f5f1;
-  width: 22px;
-  height: 22px;
-  border: 1px solid grey;
-  font-size: 13px;
-  float: left;
-  font-weight: bold;
-  color: black; }
+span2 {
+  font-weight: 400; }
 
 .next-page-wrapper {
-  width: 500px;
-  margin: 0px auto; }
+  margin-left: 20%;
+  margin-right: 59.5%;
+  margin-bottom: 2px;
+  border: 1px solid lightgrey;
+  background-color: white;
+  height: 33px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+#left {
+  color: grey;
+  width: 31px;
+  height: 31px;
+  border-left: 1px solid lightgrey;
+  font-size: 15px;
+  float: left;
+  font-weight: bold;
+  background-color: #f5f5f1;
+  border: none; }
+
+#currentPage {
+  color: black;
+  background-color: #f5f5f1;
+  width: 31px;
+  height: 31px;
+  border-left: 1px solid lightgrey;
+  font-size: 15px;
+  float: left;
+  font-weight: bold; }
+
+#dotsPage {
+  color: grey;
+  background-color: #f5f5f1;
+  width: 31px;
+  height: 31px;
+  border-left: 1px solid lightgrey;
+  font-size: 15px;
+  float: left;
+  font-weight: bold; }
 
 .nextPage {
-  color: black; }
+  color: black;
+  width: 31px;
+  height: 31px;
+  border-left: 1px solid lightgrey;
+  font-size: 15px;
+  float: left;
+  font-weight: bold; }
+
+.otherPages button {
+  background-color: white;
+  margin: 0;
+  text-decoration: none;
+  display: block;
+  border: none; }
+
+button.nextPage {
+  background-color: white;
+  margin: 0;
+  text-decoration: none;
+  display: block;
+  border: none;
+  border-left: 1px solid lightgrey; }
 
 footer {
   background-color: #135021;
