@@ -50,7 +50,12 @@ var gameOT = etsyItems.map(function(etsyItems) {
           <div class ="gridSquares">
               <div class="iSquare">
                 <a class="squareUrl" href="${url}">
-                  <img src="${image}"title="${title}"/>
+                  <div class="icons">
+                      <button id="hoverIcons"><img class="icon" src="Image/heart.png"></button>
+                      <button id="hoverIcons"><img class="icon" src="Image/hamburger.png"></button>
+                  </div>
+                  <div class="tile"><img class="tiles" src="${image}"title="${title}"/></div>
+
                   <div class="itemDescriptBox">
                       <div class="imageTitle">${title}></div>
                       <div class="itemPrice"><span>$</span>${price}</div>
