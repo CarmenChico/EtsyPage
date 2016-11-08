@@ -47,24 +47,22 @@ var gameOT = etsyItems.map(function(etsyItems) {
     var url = etsyItems.url;
 
         return `
-          <div class ="gridSquares">
               <div class="iSquare">
-                <a class="squareUrl" href="${url}">
-                  <div class="icons">
-                      <button id="hoverIcons"><img class="icon" src="Image/heart.png"></button>
-                      <button id="hoverIcons"><img class="icon" src="Image/hamburger.png"></button>
-                  </div>
-                  <div class="tile"><img class="tiles" src="${image}"title="${title}"/></div>
+                  <a href="#">
+                    <div class="hoverItems hidden">
+                      <img class="icon" src="Image/heart.png">
+                      <img class="icon" src="Image/hamburger.png">
+                    </div>
+                    <div class="tile"><img class="tiles" src="${image}"title="${title}"/></div>
 
-                  <div class="itemDescriptBox">
-                      <div class="imageTitle">${title}></div>
-                      <div class="itemPrice"><span>$</span>${price}</div>
-                      <div class="shopName">${shopName}</div>
+                    <div class="itemDescriptBox">
+                        <div class="imageTitle">${title}></div>
+                        <div class="itemPrice"><span>$</span>${price}</div>
+                        <div class="shopName">${shopName}</div>
 
-                  </div>
-               </a>
+                    </div>
+                  </a>
               </div>
-          </div>
           `;
   });
 
@@ -73,6 +71,13 @@ var grid = $(".grid");
 grid.append(gameOT);
   // console.log(gameOT)
 
+  // <div class="icons">
+  //     <img class="icon" src="Image/heart.png">
+  //     <img class="icon" src="Image/hamburger.png">
+  // </div>
+
+  // <button class="hoverIcons"><img class="icon" src="Image/heart.png"></button>
+  // <button class="hoverIcons"><img class="icon" src="Image/hamburger.png"></button>
 
 
   //

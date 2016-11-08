@@ -154,46 +154,35 @@ h3 {
 .grid {
   overflow: auto;
   margin-right: 18px; }
-
-.iSquare {
-  margin-left: 20px;
-  margin-bottom: 20px;
-  width: 250px;
-  height: 250px;
-  float: left;
-  border: 1px solid #e6e6e6;
-  text-overflow: ellipsis;
-  background-color: white;
-  border-radius: 4px; }
-
-.squareUrl {
-  color: black; }
-
-img.tiles {
-  height: auto;
-  width: 100%;
-  border: 0;
-  border-radius: 4px; }
-
-.icons {
-  margin-left: 193px;
-  float: right;
-  position: absolute;
-  border-radius: 4px;
-  visibility: visible; }
-
-#hoverIcons {
-  background-color: white;
-  border-radius: 4px;
-  border: .5px solid lightgrey;
-  height: 25px;
-  width: 26px;
-  padding: 3px;
-  position: absolute; }
-
-img.icon {
-  height: 16px;
-  width: 16px; }
+  .grid .iSquare {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 250px;
+    float: left;
+    border: 1px solid #e6e6e6;
+    text-overflow: ellipsis;
+    background-color: white;
+    border-radius: 4px;
+    position: relative; }
+    .grid .iSquare a {
+      color: black; }
+      .grid .iSquare a .hoverItems {
+        position: absolute;
+        z-index: 1;
+        right: 0; }
+        .grid .iSquare a .hoverItems img.icon {
+          background-color: white;
+          height: auto;
+          width: 23px;
+          border-radius: 4px; }
+      .grid .iSquare a .tile {
+        position: relative; }
+        .grid .iSquare a .tile img.tiles {
+          height: auto;
+          width: 100%;
+          border: 0;
+          border-radius: 4px; }
 
 .itemDescriptBox {
   line-height: 18px;
@@ -306,3 +295,9 @@ footer {
   color: white;
   text-align: center;
   line-height: 6; }
+
+.hidden {
+  visibility: hidden; }
+
+.iSquare:hover .hidden {
+  visibility: visible; }
