@@ -48,7 +48,7 @@ var gameOT = etsyItems.map(function(etsyItems) {
 
         return `
               <div class="iSquare">
-                  <a href="#">
+                  <a href="${url}">
                     <div class="hoverItems hidden">
                       <img class="icon" src="Image/heart.png">
                       <img class="icon" src="Image/hamburger.png">
